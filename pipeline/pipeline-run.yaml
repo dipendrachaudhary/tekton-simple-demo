@@ -1,0 +1,12 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineRun
+metadata:
+  creationTimestamp: null
+  generateName: hello-goodbye-run-
+  namespace: tekton-demo
+spec:
+  serviceAccountName: default
+  pipelineRef:
+    name: hello-goodbye
+  timeout: 1h0m0s
+status: {}
